@@ -1,0 +1,9 @@
+#!/bin/sh
+# este es un comentario
+echo "El numero de argumentos es  $#"
+echo "Los argumentos son $*"
+echo "El primero es $1"
+echo "Mi numero de proceso es  $$"
+echo "Ingresa un numero desde el teclado: "
+read numero
+echo "El numero que has ingresado es $numero"
