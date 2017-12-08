@@ -29,7 +29,7 @@ while(i<=total){
     # HA SIDO CALCULADA MEDIANTE LA OBTENCION DEL NUMERO DE CASOS FAVORABLES DIVIDIDO ENTRE
     # EL NUMERO DE CASOS TOTALES,HEMOS ADICIONADO LA FUNCION mcd() PARA VOLVER ESTA FRACCION A 
     # UNA IRREDUCTIBLE.
-    cat(acum/mcd(acum,n*n),"/",n*n/mcd(acum,n*n),"\n")
+    cat(acum/mcd(acum,N*N),"/",N*N/mcd(acum,N*N),"\n")
     i<-i+2
     }
 
