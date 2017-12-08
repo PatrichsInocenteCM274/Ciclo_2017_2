@@ -9,9 +9,9 @@ mcd <- function(a,b){
  if(r==0)return (b)
  else return (mcd(b,r))
 }
-#lECTURA DE DATOS
+# LECTURA DE DATOS
 Linea <- readLines("Entrada_problema_1.txt")
-#LECTRUA DEL NUMERO DE LINEAS A EVALUAR
+# LECTURA DEL NUMERO DE LINEAS A EVALUAR
 total<-2*strtoi(Linea[1]) 
 i<-2
 # CADA ITERACION DEL WHILE NOS PERMITIRA EVALUAR CADA CASO INDEPENDIENTEMENTE
