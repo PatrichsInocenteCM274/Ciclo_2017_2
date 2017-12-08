@@ -11,16 +11,18 @@ mcd <- function(a,b){
 }
 #lECTURA DE DATOS
 Linea <- readLines("Entrada_problema_1.txt")
-#LECTRUA DEL NUMERO DE CASOS A EVALUAR
+#LECTRUA DEL NUMERO DE LINEAS A EVALUAR
 total<-2*strtoi(Linea[1]) 
 i<-2
+# CADA ITERACION DEL WHILE NOS PERMITIRA EVALUAR CADA CASO INDEPENDIENTEMENTE
 while(i<=total){
     acum<-0 
-    n<- strtoi(unlist(strsplit(Linea[i]," "))[1])
-    k<- strtoi(unlist(strsplit(Linea[i]," "))[2])
-    for(x in 1:n){
+    N <- strtoi(unlist(strsplit(Linea[i]," "))[1])
+    K <- strtoi(unlist(strsplit(Linea[i]," "))[2])
+    # CADA ITERACION DEL FOR NOS PERMITE EVALUAR LOS CASOS FAVORABLES DENTRO DE LA CADENA
+    for(x in 1:N){
             if(substr(Linea[i+1],x,x)==1){
-                acum<-acum + 2*sum(unlist(strsplit(substr(Linea[i+1],x,x+k),""))=='1')-1
+                acum<-acum + 2*sum(unlist(strsplit(substr(Linea[i+1],x,x+K),""))=='1')-1
             }
     }    
     # SE MUESTRA LA PROBABILIDAD SEGUN EL FORMATO PEDIDO, NOTAR QUE ESTA PROBABILIDAD 
